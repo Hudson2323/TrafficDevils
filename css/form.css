@@ -1,0 +1,121 @@
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 120%;
+  padding: 20px;
+}
+
+.registration-form input[type="text"], .registration-form input[type="email"], .registration-form input[type="tel"], .registration-form select {
+  border: 1px solid rgb(3, 0, 0);
+  border-radius: 20px;
+  font-size: 16px;
+  height: 65px;
+  padding-left: 15px;
+  
+}
+
+.phone-input-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.phone-input-container select {
+  padding-left: 30px;
+  width: 90px;
+}
+
+.phone-input-container input {
+  width: 70%;
+}
+
+.agreement-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.agreement-container input {
+  width: 20px;
+  height: 20px;
+}
+
+.agreement-container label {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}
+
+.registration-form button {
+  background: #42b379;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 70%;
+  height: 65px;
+  margin: 0px auto;
+  display: block;
+}
+
+.registration-form button:hover {
+  background: rgb(66, 87, 119);
+}
+
+#phoneCode {
+  padding: 8px 8px 8px 35px;
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  width: 85px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+#phoneCode option {
+  padding: 8px 8px 8px 35px;
+  display: flex;
+  align-items: center;
+}
+
+.country-flag {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.country-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.selected-flag {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+input[type="tel"] {
+  width: 100%;
+}

@@ -22,12 +22,37 @@
    <link rel="stylesheet" href="css/responsive.css">
    <!-- Custom CSS -->
    <link rel="stylesheet" href="css/custom.css">
-   <!-- Modernizer for Portfolio -->
-   <script src="js/modernizer.js"></script>
-   <!--[if lt IE 9]>
-   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-   <![endif]-->
+   <link rel="stylesheet" href="css/form.css">
+   
+   <!-- Google Analytics -->
+   <script>
+   const urlParams = new URLSearchParams(window.location.search);
+   const gaId = urlParams.get('ga_id');
+   if(gaId) {
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', gaId);
+   }
+   </script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=${gaId}"></script>
+
+   <!-- Facebook Pixel -->
+   <script>
+   const fbId = urlParams.get('fb_id');
+   if(fbId) {
+     !function(f,b,e,v,n,t,s)
+     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+     n.queue=[];t=b.createElement(e);t.async=!0;
+     t.src=v;s=b.getElementsByTagName(e)[0];
+     s.parentNode.insertBefore(t,s)}(window, document,'script',
+     'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', fbId);
+     fbq('track', 'PageView');
+   }
+   </script>
    </head>
    <body class="realestate_version">
       <!-- LOADER -->
@@ -75,43 +100,19 @@
                   </div>
                </div>
                <div class="col-md-6 wow slideInRight hidden-xs hidden-sm">
-                  <div class="contact_form">
-                     <h3><i class="fa fa-envelope-o grd1 global-radius"></i> QUICK APPOINTMENT</h3>
-                     <form id="contactform1" class="row" name="contactform" method="post">
-                        <fieldset class="row-fluid">
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="first_name1" id="first_name1" class="form-control" placeholder="First Name">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="last_name1" id="last_name1" class="form-control" placeholder="Last Name">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="email" name="email1" id="email1" class="form-control" placeholder="Your Email">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="phone1" id="phone1" class="form-control" placeholder="Your Phone">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">Select Time</label>
-                              <select name="select_service1" id="select_service1" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="selecttime">Select Time</option>
-                                 <option value="Weekdays">Weekdays</option>
-                                 <option value="Weekend">Weekend</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">What is max price?</label>
-                              <select name="select_price1" id="select_price1" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="$100 - $2000">$100 - $2000</option>
-                                 <option value="$2000 - $4000">$2000 - $4000</option>
-                                 <option value="$4000 - $10000">$4000 - $10000</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                              <button type="submit" value="SEND" id="submit1" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get an Appointment</button>
-                           </div>
-                        </fieldset>
-                     </form>
+                  <form id="registrationForm1" class="registration-form" method="POST" action="/submit-form">
+                        
+                     <input type="text" name="name" placeholder="First Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     <input type="text" name="surname" placeholder="Last Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     <input type="email" name="email" placeholder="Your e-mail" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+         
+                     <div class="phone-input-container">
+                       <select name="phone_code" id="phoneCode1" style="color: rgb(10, 10, 10) !important; background: rgb(255, 255, 255) !important;"></select>
+                       <input type="tel" name="phone" placeholder="Your Number" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     </div>
+                     <button type="submit">Registration</button>
+                   </form>
+
                   </div>
                </div>
             </div>
@@ -238,7 +239,7 @@
                <!-- end col -->
                <div class="col-md-3">
                   <div class="agencies_meta clearfix">
-                     <span><i class="fa fa-envelope "></i> <a href="/cdn-cgi/l/email-protection#31424441415e434571425845545f505c541f525e5c"><span class="__cf_email__" data-cfemail="23505653534c515763504a57464d424e460d404c4e">[email�protected]</span></a></span>
+                     <span><i class="fa fa-envelope "></i> <a href="/cdn-cgi/l/email-protection#31424441415e434571425845545f505c541f525e5c">[emailprotected]</a></span>
                      <span><i class="fa fa-link "></i> <a href="#">www.sitename.com</a></span>
                      <span><i class="fa fa-phone-square "></i> +1 232 444 55 66</span>
                      <span><i class="fa fa-print "></i> +1 232 444 55 66</span>
@@ -424,46 +425,19 @@
             <!-- end title -->
             <div class="row">
                <div class="col-md-8 col-md-offset-2">
-                  <div class="contact_form">
-                     <div id="message"></div>
-                     <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
-                        <fieldset class="row-fluid">
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">Select Time</label>
-                              <select name="select_service" id="select_service" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="selecttime">Select Time</option>
-                                 <option value="Weekdays">Weekdays</option>
-                                 <option value="Weekend">Weekend</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                              <label class="sr-only">What is max price?</label>
-                              <select name="select_price" id="select_price" class="selectpicker form-control" data-style="btn-white">
-                                 <option value="$100 - $2000">$100 - $2000</option>
-                                 <option value="$2000 - $4000">$2000 - $4000</option>
-                                 <option value="$4000 - $10000">$4000 - $10000</option>
-                              </select>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
-                           </div>
-                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                              <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Get Appointment</button>
-                           </div>
-                        </fieldset>
-                     </form>
+                  <form id="registrationForm2" class="registration-form" method="POST" action="/submit-form">
+                        
+                     <input type="text" name="name" placeholder="First Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     <input type="text" name="surname" placeholder="Last Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     <input type="email" name="email" placeholder="Your e-mail" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+         
+                     <div class="phone-input-container">
+                       <select name="phone_code" id="phoneCode2" style="color: rgb(10, 10, 10) !important; background: rgb(255, 255, 255) !important;"></select>
+                       <input type="tel" name="phone" placeholder="Your Number" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
+                     </div>
+                     <button type="submit">Registration</button>
+                   </form>
+
                   </div>
                </div>
                <!-- end col -->
@@ -568,7 +542,7 @@
       <!-- end copyrights -->
       <a href="#home" data-scroll="" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
       <!-- ALL JS FILES -->
-      <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/all.js"></script>
+      <script src="js/all.js"></script>
       <!-- ALL PLUGINS -->
       <script src="js/custom.js"></script>
       <script src="js/portfolio.js"></script>
@@ -576,13 +550,17 @@
       <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
       <!-- MAP & CONTACT -->
       <script src="js/map.js"></script>
-   
-<include id="includedContent"></include>
-  <script>
-  $(function(){
-      $("#includedContent").load("../htmlads.html"); 
-    });
-  </script>
+      <script src="js/form.js"></script>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        
+        const oldHandler = document.getElementById('registrationForm1').onsubmit;
+        if (oldHandler) {
+          document.getElementById('registrationForm1').onsubmit = null;
+        }
+      });
+      </script>
 
  
 </body></html>

@@ -1,0 +1,1122 @@
+{
+    "AF": {
+        "language": "AF",
+        "phone": {
+            "code": "+93",
+            "length": 12,
+            "pattern": "^(93|\\+93)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/af.svg",
+        "name": "Afghanistan"
+    },
+    "AL": {
+        "language": "AL",
+        "phone": {
+            "code": "+355",
+            "length": 12,
+            "pattern": "^(355|\\+355)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/al.svg",
+        "name": "Albania"
+    },
+    "DZ": {
+        "language": "DZ",
+        "phone": {
+            "code": "+213",
+            "length": 12,
+            "pattern": "^(213|\\+213)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/dz.svg",
+        "name": "Algeria"
+    },
+    "AR": {
+        "language": "ES",
+        "phone": {
+            "code": "+54",
+            "length": 13,
+            "pattern": "^(54|\\+54)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ar.svg",
+        "name": "Argentina"
+    },
+    "AM": {
+        "language": "AM",
+        "phone": {
+            "code": "+374",
+            "length": 11,
+            "pattern": "^(374|\\+374)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/am.svg",
+        "name": "Armenia"
+    },
+    "AU": {
+        "language": "EN",
+        "phone": {
+            "code": "+61",
+            "length": 11,
+            "pattern": "^(61|\\+61)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/au.svg",
+        "name": "Australia"
+    },
+    "AT": {
+        "language": "DE",
+        "phone": {
+            "code": "+43",
+            "length": 13,
+            "pattern": "^(43|\\+43)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/at.svg",
+        "name": "Austria"
+    },
+    "AZ": {
+        "language": "AZ",
+        "phone": {
+            "code": "+994",
+            "length": 13,
+            "pattern": "^(994|\\+994)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/az.svg",
+        "name": "Azerbaijan"
+    },
+    "BH": {
+        "language": "AR",
+        "phone": {
+            "code": "+973",
+            "length": 12,
+            "pattern": "^(973|\\+973)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/bh.svg",
+        "name": "Bahrain"
+    },
+    "BD": {
+        "language": "BN",
+        "phone": {
+            "code": "+880",
+            "length": 13,
+            "pattern": "^(880|\\+880)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/bd.svg",
+        "name": "Bangladesh"
+    },
+    "BY": {
+        "language": "BY",
+        "phone": {
+            "code": "+375",
+            "length": 13,
+            "pattern": "^(375|\\+375)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/by.svg",
+        "name": "Belarus"
+    },
+    "BE": {
+        "language": "FR",
+        "phone": {
+            "code": "+32",
+            "length": 12,
+            "pattern": "^(32|\\+32)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/be.svg",
+        "name": "Belgium"
+    },
+    "BO": {
+        "language": "ES",
+        "phone": {
+            "code": "+591",
+            "length": 12,
+            "pattern": "^(591|\\+591)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/bo.svg",
+        "name": "Bolivia"
+    },
+    "BA": {
+        "language": "BS",
+        "phone": {
+            "code": "+387",
+            "length": 12,
+            "pattern": "^(387|\\+387)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/ba.svg",
+        "name": "Bosnia and Herzegovina"
+    },
+    "BR": {
+        "language": "PT",
+        "phone": {
+            "code": "+55",
+            "length": 13,
+            "pattern": "^(55|\\+55)[0-9]{11}$"
+        },
+        "flag": "https://flagcdn.com/br.svg",
+        "name": "Brazil"
+    },
+    "BG": {
+        "language": "BG",
+        "phone": {
+            "code": "+359",
+            "length": 12,
+            "pattern": "^(359|\\+359)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/bg.svg",
+        "name": "Bulgaria"
+    },
+    "KH": {
+        "language": "KM",
+        "phone": {
+            "code": "+855",
+            "length": 12,
+            "pattern": "^(855|\\+855)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/kh.svg",
+        "name": "Cambodia"
+    },
+    "CA": {
+        "language": "EN",
+        "phone": {
+            "code": "+1",
+            "length": 11,
+            "pattern": "^(1|\\+1)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ca.svg",
+        "name": "Canada"
+    },
+    "CL": {
+        "language": "ES",
+        "phone": {
+            "code": "+56",
+            "length": 12,
+            "pattern": "^(56|\\+56)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/cl.svg",
+        "name": "Chile"
+    },
+    "CN": {
+        "language": "ZH",
+        "phone": {
+            "code": "+86",
+            "length": 14,
+            "pattern": "^(86|\\+86)[0-9]{11}$"
+        },
+        "flag": "https://flagcdn.com/cn.svg",
+        "name": "China"
+    },
+    "CO": {
+        "language": "ES",
+        "phone": {
+            "code": "+57",
+            "length": 13,
+            "pattern": "^(57|\\+57)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/co.svg",
+        "name": "Colombia"
+    },
+    "CR": {
+        "language": "ES",
+        "phone": {
+            "code": "+506",
+            "length": 12,
+            "pattern": "^(506|\\+506)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/cr.svg",
+        "name": "Costa Rica"
+    },
+    "HR": {
+        "language": "HR",
+        "phone": {
+            "code": "+385",
+            "length": 12,
+            "pattern": "^(385|\\+385)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/hr.svg",
+        "name": "Croatia"
+    },
+    "CY": {
+        "language": "EL",
+        "phone": {
+            "code": "+357",
+            "length": 12,
+            "pattern": "^(357|\\+357)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/cy.svg",
+        "name": "Cyprus"
+    },
+    "CZ": {
+        "language": "CS",
+        "phone": {
+            "code": "+420",
+            "length": 13,
+            "pattern": "^(420|\\+420)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/cz.svg",
+        "name": "Czech Republic"
+    },
+    "DK": {
+        "language": "DA",
+        "phone": {
+            "code": "+45",
+            "length": 11,
+            "pattern": "^(45|\\+45)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/dk.svg",
+        "name": "Denmark"
+    },
+    "DO": {
+        "language": "ES",
+        "phone": {
+            "code": "+1",
+            "length": 11,
+            "pattern": "^(1|\\+1)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/do.svg",
+        "name": "Dominican Republic"
+    },
+    "EC": {
+        "language": "ES",
+        "phone": {
+            "code": "+593",
+            "length": 13,
+            "pattern": "^(593|\\+593)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ec.svg",
+        "name": "Ecuador"
+    },
+    "EG": {
+        "language": "AR",
+        "phone": {
+            "code": "+20",
+            "length": 12,
+            "pattern": "^(20|\\+20)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/eg.svg",
+        "name": "Egypt"
+    },
+    "ES": {
+        "language": "ES",
+        "phone": {
+            "code": "+34",
+            "length": 12,
+            "pattern": "^(34|\\+34)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/es.svg",
+        "name": "Spain"
+    },
+    "SV": {
+        "language": "ES",
+        "phone": {
+            "code": "+503",
+            "length": 12,
+            "pattern": "^(503|\\+503)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/sv.svg",
+        "name": "El Salvador"
+    },
+    "EE": {
+        "language": "ET",
+        "phone": {
+            "code": "+372",
+            "length": 11,
+            "pattern": "^(372|\\+372)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/ee.svg",
+        "name": "Estonia"
+    },
+    "FI": {
+        "language": "FI",
+        "phone": {
+            "code": "+358",
+            "length": 12,
+            "pattern": "^(358|\\+358)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/fi.svg",
+        "name": "Finland"
+    },
+    "FR": {
+        "language": "FR",
+        "phone": {
+            "code": "+33",
+            "length": 11,
+            "pattern": "^(33|\\+33)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/fr.svg",
+        "name": "France"
+    },
+    "GE": {
+        "language": "KA",
+        "phone": {
+            "code": "+995",
+            "length": 13,
+            "pattern": "^(995|\\+995)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ge.svg",
+        "name": "Georgia"
+    },
+    "DE": {
+        "language": "DE",
+        "phone": {
+            "code": "+49",
+            "length": [13, 14],
+            "pattern": "^(49|\\+49)[0-9]{10,11}$"
+        },
+        "flag": "https://flagcdn.com/de.svg",
+        "name": "Germany"
+    },
+    "GR": {
+        "language": "EL",
+        "phone": {
+            "code": "+30",
+            "length": 13,
+            "pattern": "^(30|\\+30)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/gr.svg",
+        "name": "Greece"
+    },
+    "GT": {
+        "language": "ES",
+        "phone": {
+            "code": "+502",
+            "length": 12,
+            "pattern": "^(502|\\+502)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/gt.svg",
+        "name": "Guatemala"
+    },
+    "HN": {
+        "language": "ES",
+        "phone": {
+            "code": "+504",
+            "length": 12,
+            "pattern": "^(504|\\+504)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/hn.svg",
+        "name": "Honduras"
+    },
+    "HK": {
+        "language": "ZH",
+        "phone": {
+            "code": "+852",
+            "length": 12,
+            "pattern": "^(852|\\+852)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/hk.svg",
+        "name": "Hong Kong"
+    },
+    "HU": {
+        "language": "HU",
+        "phone": {
+            "code": "+36",
+            "length": 11,
+            "pattern": "^(36|\\+36)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/hu.svg",
+        "name": "Hungary"
+    },
+    "IS": {
+        "language": "IS",
+        "phone": {
+            "code": "+354",
+            "length": 11,
+            "pattern": "^(354|\\+354)[0-9]{7}$"
+        },
+        "flag": "https://flagcdn.com/is.svg",
+        "name": "Iceland"
+    },
+    "IN": {
+        "language": "HI",
+        "phone": {
+            "code": "+91",
+            "length": 13,
+            "pattern": "^(91|\\+91)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/in.svg",
+        "name": "India"
+    },
+    "ID": {
+        "language": "ID",
+        "phone": {
+            "code": "+62",
+            "length": [13, 14],
+            "pattern": "^(62|\\+62)[0-9]{10,11}$"
+        },
+        "flag": "https://flagcdn.com/id.svg",
+        "name": "Indonesia"
+    },
+    "IR": {
+        "language": "FA",
+        "phone": {
+            "code": "+98",
+            "length": 13,
+            "pattern": "^(98|\\+98)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ir.svg",
+        "name": "Iran"
+    },
+    "IQ": {
+        "language": "AR",
+        "phone": {
+            "code": "+964",
+            "length": 14,
+            "pattern": "^(964|\\+964)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/iq.svg",
+        "name": "Iraq"
+    },
+    "IE": {
+        "language": "EN",
+        "phone": {
+            "code": "+353",
+            "length": 12,
+            "pattern": "^(353|\\+353)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ie.svg",
+        "name": "Ireland"
+    },
+    "IL": {
+        "language": "HE",
+        "phone": {
+            "code": "+972",
+            "length": 13,
+            "pattern": "^(972|\\+972)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/il.svg",
+        "name": "Israel"
+    },
+    "IT": {
+        "language": "IT",
+        "phone": {
+            "code": "+39",
+            "length": 12,
+            "pattern": "^(39|\\+39)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/it.svg",
+        "name": "Italy"
+    },
+    "JP": {
+        "language": "JA",
+        "phone": {
+            "code": "+81",
+            "length": 12,
+            "pattern": "^(81|\\+81)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/jp.svg",
+        "name": "Japan"
+    },
+    "JO": {
+        "language": "AR",
+        "phone": {
+            "code": "+962",
+            "length": 13,
+            "pattern": "^(962|\\+962)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/jo.svg",
+        "name": "Jordan"
+    },
+    "KZ": {
+        "language": "KZ",
+        "phone": {
+            "code": "+7",
+            "length": 12,
+            "pattern": "^(7|\\+7)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/kz.svg",
+        "name": "Kazakhstan"
+    },
+    "KE": {
+        "language": "SW",
+        "phone": {
+            "code": "+254",
+            "length": 13,
+            "pattern": "^(254|\\+254)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ke.svg",
+        "name": "Kenya"
+    },
+    "KR": {
+        "language": "KO",
+        "phone": {
+            "code": "+82",
+            "length": 13,
+            "pattern": "^(82|\\+82)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/kr.svg",
+        "name": "South Korea"
+    },
+    "KW": {
+        "language": "AR",
+        "phone": {
+            "code": "+965",
+            "length": 12,
+            "pattern": "^(965|\\+965)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/kw.svg",
+        "name": "Kuwait"
+    },
+    "KG": {
+        "language": "KY",
+        "phone": {
+            "code": "+996",
+            "length": 13,
+            "pattern": "^(996|\\+996)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/kg.svg",
+        "name": "Kyrgyzstan"
+    },
+    "LA": {
+        "language": "LO",
+        "phone": {
+            "code": "+856",
+            "length": 13,
+            "pattern": "^(856|\\+856)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/la.svg",
+        "name": "Laos"
+    },
+    "LV": {
+        "language": "LV",
+        "phone": {
+            "code": "+371",
+            "length": 12,
+            "pattern": "^(371|\\+371)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/lv.svg",
+        "name": "Latvia"
+    },
+    "LB": {
+        "language": "AR",
+        "phone": {
+            "code": "+961",
+            "length": 12,
+            "pattern": "^(961|\\+961)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/lb.svg",
+        "name": "Lebanon"
+    },
+    "LY": {
+        "language": "AR",
+        "phone": {
+            "code": "+218",
+            "length": 13,
+            "pattern": "^(218|\\+218)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ly.svg",
+        "name": "Libya"
+    },
+    "LT": {
+        "language": "LT",
+        "phone": {
+            "code": "+370",
+            "length": 12,
+            "pattern": "^(370|\\+370)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/lt.svg",
+        "name": "Lithuania"
+    },
+    "LU": {
+        "language": "FR",
+        "phone": {
+            "code": "+352",
+            "length": 13,
+            "pattern": "^(352|\\+352)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/lu.svg",
+        "name": "Luxembourg"
+    },
+    "MK": {
+        "language": "MK",
+        "phone": {
+            "code": "+389",
+            "length": 12,
+            "pattern": "^(389|\\+389)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/mk.svg",
+        "name": "North Macedonia"
+    },
+    "MY": {
+        "language": "MS",
+        "phone": {
+            "code": "+60",
+            "length": 12,
+            "pattern": "^(60|\\+60)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/my.svg",
+        "name": "Malaysia"
+    },
+    "MT": {
+        "language": "MT",
+        "phone": {
+            "code": "+356",
+            "length": 12,
+            "pattern": "^(356|\\+356)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/mt.svg",
+        "name": "Malta"
+    },
+    "MX": {
+        "language": "ES",
+        "phone": {
+            "code": "+52",
+            "length": 13,
+            "pattern": "^(52|\\+52)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/mx.svg",
+        "name": "Mexico"
+    },
+    "MD": {
+        "language": "RO",
+        "phone": {
+            "code": "+373",
+            "length": 12,
+            "pattern": "^(373|\\+373)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/md.svg",
+        "name": "Moldova"
+    },
+    "MN": {
+        "language": "MN",
+        "phone": {
+            "code": "+976",
+            "length": 12,
+            "pattern": "^(976|\\+976)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/mn.svg",
+        "name": "Mongolia"
+    },
+    "ME": {
+        "language": "SR",
+        "phone": {
+            "code": "+382",
+            "length": 12,
+            "pattern": "^(382|\\+382)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/me.svg",
+        "name": "Montenegro"
+    },
+    "MA": {
+        "language": "AR",
+        "phone": {
+            "code": "+212",
+            "length": 12,
+            "pattern": "^(212|\\+212)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ma.svg",
+        "name": "Morocco"
+    },
+    "NP": {
+        "language": "NE",
+        "phone": {
+            "code": "+977",
+            "length": 13,
+            "pattern": "^(977|\\+977)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/np.svg",
+        "name": "Nepal"
+    },
+    "NL": {
+        "language": "NL",
+        "phone": {
+            "code": "+31",
+            "length": 12,
+            "pattern": "^(31|\\+31)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/nl.svg",
+        "name": "Netherlands"
+    },
+    "NZ": {
+        "language": "EN",
+        "phone": {
+            "code": "+64",
+            "length": 12,
+            "pattern": "^(64|\\+64)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/nz.svg",
+        "name": "New Zealand"
+    },
+    "NI": {
+        "language": "ES",
+        "phone": {
+            "code": "+505",
+            "length": 12,
+            "pattern": "^(505|\\+505)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/ni.svg",
+        "name": "Nicaragua"
+    },
+    "NO": {
+        "language": "NO",
+        "phone": {
+            "code": "+47",
+            "length": 11,
+            "pattern": "^(47|\\+47)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/no.svg",
+        "name": "Norway"
+    },
+    "OM": {
+        "language": "AR",
+        "phone": {
+            "code": "+968",
+            "length": 12,
+            "pattern": "^(968|\\+968)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/om.svg",
+        "name": "Oman"
+    },
+    "PK": {
+        "language": "UR",
+        "phone": {
+            "code": "+92",
+            "length": 13,
+            "pattern": "^(92|\\+92)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/pk.svg",
+        "name": "Pakistan"
+    },
+    "PS": {
+        "language": "AR",
+        "phone": {
+            "code": "+970",
+            "length": 13,
+            "pattern": "^(970|\\+970)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ps.svg",
+        "name": "Palestine"
+    },
+    "PA": {
+        "language": "ES",
+        "phone": {
+            "code": "+507",
+            "length": 12,
+            "pattern": "^(507|\\+507)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/pa.svg",
+        "name": "Panama"
+    },
+    "PY": {
+        "language": "ES",
+        "phone": {
+            "code": "+595",
+            "length": 13,
+            "pattern": "^(595|\\+595)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/py.svg",
+        "name": "Paraguay"
+    },
+    "PE": {
+        "language": "ES",
+        "phone": {
+            "code": "+51",
+            "length": 12,
+            "pattern": "^(51|\\+51)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/pe.svg",
+        "name": "Peru"
+    },
+    "PH": {
+        "language": "TL",
+        "phone": {
+            "code": "+63",
+            "length": 13,
+            "pattern": "^(63|\\+63)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ph.svg",
+        "name": "Philippines"
+    },
+    "PL": {
+        "language": "PL",
+        "phone": {
+            "code": "+48",
+            "length": 12,
+            "pattern": "^(48|\\+48)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/pl.svg",
+        "name": "Poland"
+    },
+    "PT": {
+        "language": "PT",
+        "phone": {
+            "code": "+351",
+            "length": 13,
+            "pattern": "^(351|\\+351)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/pt.svg",
+        "name": "Portugal"
+    },
+    "PR": {
+        "language": "ES",
+        "phone": {
+            "code": "+1",
+            "length": 11,
+            "pattern": "^(1|\\+1)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/pr.svg",
+        "name": "Puerto Rico"
+    },
+    "QA": {
+        "language": "AR",
+        "phone": {
+            "code": "+974",
+            "length": 12,
+            "pattern": "^(974|\\+974)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/qa.svg",
+        "name": "Qatar"
+    },
+    "RO": {
+        "language": "RO",
+        "phone": {
+            "code": "+40",
+            "length": 12,
+            "pattern": "^(40|\\+40)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ro.svg",
+        "name": "Romania"
+    },
+    "RU": {
+        "language": "RU",
+        "phone": {
+            "code": "+7",
+            "length": 12,
+            "pattern": "^(7|\\+7)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ru.svg",
+        "name": "Russia"
+    },
+    "SA": {
+        "language": "AR",
+        "phone": {
+            "code": "+966",
+            "length": 13,
+            "pattern": "^(966|\\+966)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/sa.svg",
+        "name": "Saudi Arabia"
+    },
+    "RS": {
+        "language": "SR",
+        "phone": {
+            "code": "+381",
+            "length": 13,
+            "pattern": "^(381|\\+381)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/rs.svg",
+        "name": "Serbia"
+    },
+    "SG": {
+        "language": "EN",
+        "phone": {
+            "code": "+65",
+            "length": 11,
+            "pattern": "^(65|\\+65)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/sg.svg",
+        "name": "Singapore"
+    },
+    "SK": {
+        "language": "SK",
+        "phone": {
+            "code": "+421",
+            "length": 13,
+            "pattern": "^(421|\\+421)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/sk.svg",
+        "name": "Slovakia"
+    },
+    "SI": {
+        "language": "SL",
+        "phone": {
+            "code": "+386",
+            "length": 12,
+            "pattern": "^(386|\\+386)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/si.svg",
+        "name": "Slovenia"
+    },
+    "ZA": {
+        "language": "EN",
+        "phone": {
+            "code": "+27",
+            "length": 12,
+            "pattern": "^(27|\\+27)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/za.svg",
+        "name": "South Africa"
+    },
+    "LK": {
+        "language": "SI",
+        "phone": {
+            "code": "+94",
+            "length": 12,
+            "pattern": "^(94|\\+94)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/lk.svg",
+        "name": "Sri Lanka"
+    },
+    "SE": {
+        "language": "SV",
+        "phone": {
+            "code": "+46",
+            "length": 12,
+            "pattern": "^(46|\\+46)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/se.svg",
+        "name": "Sweden"
+    },
+    "CH": {
+        "language": "DE",
+        "phone": {
+            "code": "+41",
+            "length": 12,
+            "pattern": "^(41|\\+41)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ch.svg",
+        "name": "Switzerland"
+    },
+    "TW": {
+        "language": "ZH",
+        "phone": {
+            "code": "+886",
+            "length": 13,
+            "pattern": "^(886|\\+886)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/tw.svg",
+        "name": "Taiwan"
+    },
+    "TJ": {
+        "language": "TG",
+        "phone": {
+            "code": "+992",
+            "length": 13,
+            "pattern": "^(992|\\+992)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/tj.svg",
+        "name": "Tajikistan"
+    },
+    "TH": {
+        "language": "TH",
+        "phone": {
+            "code": "+66",
+            "length": 12,
+            "pattern": "^(66|\\+66)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/th.svg",
+        "name": "Thailand"
+    },
+    "TN": {
+        "language": "AR",
+        "phone": {
+            "code": "+216",
+            "length": 12,
+            "pattern": "^(216|\\+216)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/tn.svg",
+        "name": "Tunisia"
+    },
+    "TR": {
+        "language": "TR",
+        "phone": {
+            "code": "+90",
+            "length": 13,
+            "pattern": "^(90|\\+90)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/tr.svg",
+        "name": "Turkey"
+    },
+    "TM": {
+        "language": "TK",
+        "phone": {
+            "code": "+993",
+            "length": 12,
+            "pattern": "^(993|\\+993)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/tm.svg",
+        "name": "Turkmenistan"
+    },
+    "UA": {
+        "language": "UA",
+        "phone": {
+            "code": "+380",
+            "length": 13,
+            "pattern": "^(380|\\+380)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ua.svg",
+        "name": "Ukraine"
+    },
+    "AE": {
+        "language": "AR",
+        "phone": {
+            "code": "+971",
+            "length": 13,
+            "pattern": "^(971|\\+971)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ae.svg",
+        "name": "United Arab Emirates"
+    },
+    "GB": {
+        "language": "EN",
+        "phone": {
+            "code": "+44",
+            "length": 13,
+            "pattern": "^(44|\\+44)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/gb.svg",
+        "name": "United Kingdom"
+    },
+    "US": {
+        "language": "EN",
+        "phone": {
+            "code": "+1",
+            "length": 11,
+            "pattern": "^(1|\\+1)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/us.svg",
+        "name": "United States"
+    },
+    "UY": {
+        "language": "ES",
+        "phone": {
+            "code": "+598",
+            "length": 12,
+            "pattern": "^(598|\\+598)[0-9]{8}$"
+        },
+        "flag": "https://flagcdn.com/uy.svg",
+        "name": "Uruguay"
+    },
+    "UZ": {
+        "language": "UZ",
+        "phone": {
+            "code": "+998",
+            "length": 13,
+            "pattern": "^(998|\\+998)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/uz.svg",
+        "name": "Uzbekistan"
+    },
+    "VE": {
+        "language": "ES",
+        "phone": {
+            "code": "+58",
+            "length": 13,
+            "pattern": "^(58|\\+58)[0-9]{10}$"
+        },
+        "flag": "https://flagcdn.com/ve.svg",
+        "name": "Venezuela"
+    },
+    "VN": {
+        "language": "VI",
+        "phone": {
+            "code": "+84",
+            "length": 12,
+            "pattern": "^(84|\\+84)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/vn.svg",
+        "name": "Vietnam"
+    },
+    "YE": {
+        "language": "AR",
+        "phone": {
+            "code": "+967",
+            "length": 13,
+            "pattern": "^(967|\\+967)[0-9]{9}$"
+        },
+        "flag": "https://flagcdn.com/ye.svg",
+        "name": "Yemen"
+    }
+} 
