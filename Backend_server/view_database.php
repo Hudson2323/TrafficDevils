@@ -1,3 +1,22 @@
+<?php
+// Настройки авторизации
+$valid_username = 'admin';
+$valid_password = 'trafficdevilsisbest'; 
+
+// Проверка авторизации
+if (!isset($_SERVER['PHP_AUTH_USER']) || 
+    $_SERVER['PHP_AUTH_USER'] !== $valid_username || 
+    $_SERVER['PHP_AUTH_PW'] !== $valid_password) {
+    
+    header('WWW-Authenticate: Basic realm="Доступ к базе данных"');
+    header('HTTP/1.0 401 Unauthorized');
+    echo '<h1>Доступ запрещен</h1>';
+    echo '<p>Для просмотра базы данных необходима авторизация.</p>';
+    exit;
+}
+
+// Если авторизация успешна, продолжаем выполнение скрипта
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

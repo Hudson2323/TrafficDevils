@@ -131,6 +131,9 @@ if (extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
          fbq('track', 'PageView');
       }
    </script>
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="realestate_version">

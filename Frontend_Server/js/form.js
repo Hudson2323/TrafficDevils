@@ -253,9 +253,15 @@ class RegistrationForm {
 
   async handleSubmit(e) {
     e.preventDefault();
+    console.log("Form submission started");
 
-    if (this.isSubmitting) return;
+    if (this.isSubmitting) {
+      console.log("Already submitting, ignoring");
+      return;
+    }
+    
     this.isSubmitting = true;
+    console.log("Setting isSubmitting to true");
 
     try {
       const formData = new FormData(this.form);
@@ -314,7 +320,9 @@ class RegistrationForm {
         // Використовуємо локальний проксі для відправки cURL запиту до віддаленого сервера
         const backendUrl = window.backendServerUrl || '';
         
-        this.form.querySelector('button[type="submit"]').textContent = 'Надсилання...';
+        const submitButton = this.form.querySelector('button[type="submit"]');
+        submitButton.textContent = 'Надсилання...';
+        submitButton.disabled = true;
         
         console.log('Відправка даних:', jsonData); // Додаємо для відлагодження
         
@@ -329,13 +337,12 @@ class RegistrationForm {
         });
 
         const result = await response.json();
-        console.log('Відповідь сервера:', result); // Додаємо для відлагодження
+        console.log('Server response:', result); // Додаємо для відлагодження
 
         if (result.success) {
-          // Добавляем в кэш для предотвращения повторной отправки
           this.submissionCache.add(`${email}|${phone}|${ip}`);
           
-          // Отправка события в Google Analytics
+          // Отправка событий в аналитику
           const urlParams = new URLSearchParams(window.location.search);
           const gaId = urlParams.get('ga_id');
           if(gaId && typeof gtag === 'function') {
@@ -350,40 +357,55 @@ class RegistrationForm {
             fbq('track', 'Lead');
           }
           
-          // Показываем успешное сообщение и перенаправляем
-          this.showModal(result.message || "Дані успішно відправлені", () => {
-            window.location.href = result.redirectUrl || "/thank-you.html";
+          // Очищаем форму
+          this.form.reset();
+          
+          // Показываем модальное окно с перенаправлением
+          this.showModal("Дані успішно відправлені. Зараз вас буде перенаправлено...", function() {
+            window.location.href = "https://traffic-devils.webflow.io/";
           });
         } else {
-          // Показываем сообщение об ошибке
+          submitButton.textContent = 'Реєстрація';
+          submitButton.disabled = false;
           this.showModal(result.message || "Помилка відправки форми");
-          this.isSubmitting = false;
-          this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
         }
       } catch (error) {
-        console.error("Помилка запиту:", error);
+        console.error("Request error:", error);
+        submitButton.textContent = 'Реєстрація';
+        submitButton.disabled = false;
         this.showModal("Не вдалося відправити дані. Спробуйте знову.");
-        this.isSubmitting = false;
-        this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
       }
     } catch (error) {
-      console.error('Помилка відправки:', error);
+      console.error('Submission error:', error);
+      const submitButton = this.form.querySelector('button[type="submit"]');
+      submitButton.textContent = 'Реєстрація';
+      submitButton.disabled = false;
       this.showModal('Сталася помилка при відправці форми. Будь ласка, спробуйте знову.');
-      this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
     } finally {
       this.isSubmitting = false;
+      console.log("Setting isSubmitting to false");
     }
   }
 
-  // Добавляем метод для отображения модального окна
+  // Обновленный метод showModal
   showModal(message, callback = null) {
-    this.modalMessage.text(message);
-    this.modal.modal('show');
+    const modal = document.getElementById('formResponseModal');
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalBody = modal.querySelector('#formResponseMessage');
+    
+    modalTitle.textContent = 'Повідомлення';
+    modalBody.textContent = message;
+    
+    // Используем jQuery для показа модального окна
+    $('#formResponseModal').modal('show');
     
     if (callback) {
-      this.modal.on('hidden.bs.modal', () => {
+      // Удаляем предыдущие обработчики, чтобы избежать дублирования
+      $('#formResponseModal').off('hidden.bs.modal');
+      
+      $('#formResponseModal').on('hidden.bs.modal', function() {
         callback();
-        this.modal.off('hidden.bs.modal');
+        $('#formResponseModal').off('hidden.bs.modal');
       });
     }
   }
@@ -402,3 +424,27 @@ document.addEventListener('DOMContentLoaded', () => {
     new RegistrationForm('registrationForm2', 'phoneCode2');
   }
 });
+
+// Удаляем дублирующую функцию submitForm, так как она не используется
+// Оставляем только глобальную функцию showModal для совместимости
+function showModal(title, message, callback = null) {
+  const modal = document.getElementById('formResponseModal');
+  const modalTitle = modal.querySelector('.modal-title');
+  const modalBody = modal.querySelector('#formResponseMessage');
+  
+  modalTitle.textContent = title;
+  modalBody.textContent = message;
+  
+  // Используем Bootstrap для показа модального окна
+  $('#formResponseModal').modal('show');
+  
+  if (callback) {
+    // Удаляем предыдущие обработчики, чтобы избежать дублирования
+    $('#formResponseModal').off('hidden.bs.modal');
+    
+    $('#formResponseModal').on('hidden.bs.modal', function() {
+      callback();
+      $('#formResponseModal').off('hidden.bs.modal');
+    });
+  }
+}

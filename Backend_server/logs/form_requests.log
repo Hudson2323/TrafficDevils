@@ -1,0 +1,760 @@
+{
+    "timestamp": "2025-03-20 17:08:52",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "test1",
+        "surname": "test1",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******12",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 17:10:44",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "test2",
+        "surname": "test2",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******67",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "test TrafficDevils",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 18:11:57",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test3",
+        "surname": "Test3",
+        "email": "Te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******56",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "<script>alert('XSS атака')<\/script>",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/"
+    },
+    "response_data": {
+        "success": false,
+        "message": "Помилка перевірки безпеки"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:12:41",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test3",
+        "surname": "Test3",
+        "email": "Te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******56",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "Testing",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/"
+    },
+    "response_data": {
+        "success": false,
+        "message": "Помилка перевірки безпеки"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:13:56",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test4",
+        "surname": "Test4",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******61",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "Test",
+        "ip": "94.153.1.188",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "http:\/\/zafaley.com\/"
+    },
+    "response_data": {
+        "success": false,
+        "message": "Помилка перевірки безпеки"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:19:52",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test5",
+        "surname": "Test5",
+        "email": "Te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******43",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "Test",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 18:20:51",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "test7",
+        "surname": "test7",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******84",
+        "select_time": "Weekend",
+        "select_price": "$2000 - $4000",
+        "comments": "   &lt;script&gt;alert(&#039;XSS атака&#039;)&lt;\/script&gt;",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 18:25:27",
+    "ip": "194.4.68.207",
+    "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36",
+    "request_data": {
+        "email": "te***@example.com",
+        "phone": "1234******90"
+    },
+    "response_data": {
+        "success": false,
+        "message": "Поле name є обов'язковим"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:28:35",
+    "ip": "54.198.55.229",
+    "user_agent": "Mozilla\/5.0 (compatible)",
+    "request_data": [],
+    "response_data": {
+        "success": false,
+        "message": "Невірний формат даних"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:28:35",
+    "ip": "54.156.251.192",
+    "user_agent": "Mozilla\/5.0 (compatible)",
+    "request_data": [],
+    "response_data": {
+        "success": false,
+        "message": "Невірний формат даних"
+    },
+    "success": false
+}
+---
+{
+    "timestamp": "2025-03-20 18:35:14",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test8",
+        "surname": "Test8",
+        "email": "Te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******21",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:35:36",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "TestFinal",
+        "surname": "TestFinal",
+        "email": "Te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******43",
+        "select_time": "Weekend",
+        "select_price": "$2000 - $4000",
+        "comments": "Test",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:38:49",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testfinalochka",
+        "surname": "testfinalochka",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******43",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:40:16",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "test222",
+        "surname": "test222",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******43",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:41:09",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testfinall",
+        "surname": "testfinall",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******61",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:41:44",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testfinall1",
+        "surname": "testfinall1",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******32",
+        "select_time": "Weekdays",
+        "select_price": "$4000 - $10000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:42:42",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Testonphone",
+        "surname": "Testonphone",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******49",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "Dhdgsgs",
+        "ip": "46.211.116.99",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "46.211.116.99"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:45:11",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testing22222",
+        "surname": "testing22222",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******12",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:46:51",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test222222",
+        "surname": "Test222222",
+        "email": "te***@gmail.con",
+        "phone_code": "UA",
+        "phone": "+380******41",
+        "select_time": "Weekdays",
+        "select_price": "$100 - $2000",
+        "comments": "Hahaha\n",
+        "ip": "46.133.201.71",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm2",
+        "url": "http:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "46.133.201.71"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:49:29",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "test222222222",
+        "surname": "test222222222",
+        "email": "te***@mail.ru",
+        "phone_code": "UA",
+        "phone": "+380******22",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "143.244.46.67",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "143.244.46.67"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:53:26",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testfinal",
+        "surname": "testfinal",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******77",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "143.244.46.67",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "143.244.46.67"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 19:58:39",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testfin",
+        "surname": "testfin",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******34",
+        "select_time": "Weekdays",
+        "select_price": "$4000 - $10000",
+        "ip": "143.244.46.67",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "143.244.46.67"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 20:01:35",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test22222222",
+        "surname": "Test22222222",
+        "email": "Te***@ssss.ru",
+        "phone_code": "UA",
+        "phone": "+380******63",
+        "select_time": "Weekdays",
+        "select_price": "$100 - $2000",
+        "ip": "194.4.68.207",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 20:04:18",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "Test4",
+        "surname": "Test4",
+        "email": "sa***@gmdmds.ey",
+        "phone_code": "UA",
+        "phone": "+380******31",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "193.239.238.58",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "193.239.238.58"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 20:08:37",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "testing123",
+        "surname": "testing123",
+        "email": "te***@gmail.com",
+        "phone_code": "UA",
+        "phone": "+380******82",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "ip": "143.244.46.67",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "143.244.46.67"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
+{
+    "timestamp": "2025-03-20 20:11:57",
+    "ip": "2001:67c:2f5c:2::14a",
+    "user_agent": "unknown",
+    "request_data": {
+        "name": "vlreg",
+        "surname": "vlreg",
+        "email": "vl***@mail.com",
+        "phone_code": "UA",
+        "phone": "+380******85",
+        "select_time": "Weekdays",
+        "select_price": "$4000 - $10000",
+        "ip": "104.28.201.202",
+        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
+        "formId": "registrationForm1",
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "104.28.201.202"
+        }
+    },
+    "response_data": {
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
+    },
+    "success": true
+}
+---
