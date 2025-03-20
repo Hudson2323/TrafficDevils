@@ -6,19 +6,60 @@
   padding: 20px;
 }
 
-.registration-form input[type="text"], .registration-form input[type="email"], .registration-form input[type="tel"], .registration-form select {
+@media (max-width: 768px) {
+  .registration-form {
+    width: 100%;
+    padding: 15px;
+    gap: 12px;
+  }
+}
+
+/* Унифицированный стиль для всех полей формы */
+.registration-form input[type="text"], 
+.registration-form input[type="email"], 
+.registration-form input[type="tel"], 
+.registration-form select,
+.registration-form textarea,
+.custom-select select {
   border: 1px solid rgb(3, 0, 0);
   border-radius: 20px;
   font-size: 16px;
   height: 65px;
   padding-left: 15px;
-  
+  color: rgb(0, 0, 0) !important;
+  background: rgb(255, 255, 255) !important;
+  width: 100%;
+}
+
+/* Стиль для текстового поля */
+.registration-form textarea {
+  height: auto;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .registration-form input[type="text"], 
+  .registration-form input[type="email"], 
+  .registration-form input[type="tel"], 
+  .registration-form select,
+  .registration-form textarea,
+  .custom-select select {
+    height: 50px;
+    font-size: 14px;
+  }
 }
 
 .phone-input-container {
   position: relative;
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .phone-input-container {
+    flex-direction: row;
+    gap: 8px;
+  }
 }
 
 .phone-input-container select {
@@ -28,6 +69,35 @@
 
 .phone-input-container input {
   width: 70%;
+}
+
+@media (max-width: 768px) {
+  .phone-input-container input {
+    width: 100%;
+  }
+}
+
+/* Контейнер для селектов в одну строку */
+.selects-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.custom-select {
+  flex: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .selects-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .custom-select {
+    width: 100%;
+  }
 }
 
 .agreement-container {
@@ -61,8 +131,12 @@
   display: block;
 }
 
-.registration-form button:hover {
-  background: rgb(66, 87, 119);
+@media (max-width: 768px) {
+  .registration-form button {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
 }
 
 #phoneCode {
@@ -98,11 +172,26 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .phone-input-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 .country-select {
   position: relative;
   display: flex;
   align-items: center;
   width: 30%;
+}
+
+@media (max-width: 768px) {
+  .country-select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
 
 .selected-flag {
@@ -118,4 +207,16 @@
 
 input[type="tel"] {
   width: 100%;
+}
+
+/* Добавляем мета-тег для правильного масштабирования */
+@media (max-width: 480px) {
+  .agreement-container label {
+    font-size: 12px;
+  }
+  
+  .agreement-container input {
+    width: 16px;
+    height: 16px;
+  }
 }

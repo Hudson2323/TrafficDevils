@@ -10,6 +10,10 @@ class RegistrationForm {
     this.submissionCache = new Set();
     this.isSubmitting = false;
 
+    // Добавляем ссылку на модальное окно
+    this.modal = $('#formResponseModal');
+    this.modalMessage = $('#formResponseMessage');
+
     this.init();
   }
 
@@ -205,13 +209,21 @@ class RegistrationForm {
       if (this.submissionCache.has(submissionKey)) {
         return true;
       }
-
-      const response = await fetch('check_duplicate.php', {
+      
+      // Используем cURL на стороне сервера для проверки дубликатов
+      const backendUrl = window.backendServerUrl || '';
+      
+      // Используем локальный прокси для выполнения cURL запроса к бэкенд-серверу
+      const response = await fetch('/curl-proxy.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, phone, ip }),
+        body: JSON.stringify({
+          method: 'POST',
+          url: `${backendUrl}/form-handler.php`,
+          data: { email, phone, ip, checkDuplicateOnly: true }
+        }),
       });
 
       const result = await response.json();
@@ -254,7 +266,7 @@ class RegistrationForm {
       const requiredFields = ['name', 'surname', 'email', 'phone'];
       for (const field of requiredFields) {
         if (!formData.get(field)) {
-          alert(`Будь ласка, заповніть поле ${field}`);
+          this.showModal(`Будь ласка, заповніть поле ${field}`);
           this.isSubmitting = false;
           return;
         }
@@ -262,21 +274,14 @@ class RegistrationForm {
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        alert('Будь ласка, введіть коректну email адресу');
+        this.showModal('Будь ласка, введіть коректну email адресу');
         this.isSubmitting = false;
         return;
       }
 
       if (!this.validatePhoneNumber(phone)) {
         const countryData = this.countriesData[this.selectedCountry];
-        alert(`Будь ласка, введіть коректний номер телефону для країни ${countryData.name}`);
-        this.isSubmitting = false;
-        return;
-      }
-
-      const isDuplicate = await this.checkDuplicate(email, phone, ip);
-      if (isDuplicate) {
-        alert('Заявка з такими даними вже була відправлена');
+        this.showModal(`Будь ласка, введіть коректний номер телефону для країни ${countryData.name}`);
         this.isSubmitting = false;
         return;
       }
@@ -288,15 +293,25 @@ class RegistrationForm {
         jsonData.formId = this.form.id;
         jsonData.url = window.location.href;
         
-        const response = await fetch('form-handler.php', {
+        // Используем локальный прокси для отправки cURL запроса к удаленному серверу
+        const backendUrl = window.backendServerUrl || '';
+        
+        this.form.querySelector('button[type="submit"]').textContent = 'Надсилання...';
+        
+        const response = await fetch('/curl-proxy.php', {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(jsonData)
+          body: JSON.stringify({
+            method: 'POST',
+            url: `${backendUrl}/form-handler.php`,
+            data: jsonData
+          })
         });
 
         const result = await response.json();
 
         if (result.success) {
+          // Добавляем в кэш для предотвращения повторной отправки
           this.submissionCache.add(`${email}|${phone}|${ip}`);
           
           // Отправка события в Google Analytics
@@ -309,27 +324,46 @@ class RegistrationForm {
             });
           }
           
-          // Отправка события в Facebook Pixel
           const fbId = urlParams.get('fb_id');
           if(fbId && typeof fbq === 'function') {
             fbq('track', 'Lead');
           }
           
-          window.location.href = result.redirectUrl || "/thank-you.html";
+          // Показываем успешное сообщение и перенаправляем
+          this.showModal(result.message || "Дані успішно відправлені", () => {
+            window.location.href = result.redirectUrl || "/thank-you.html";
+          });
         } else {
-          alert(result.message || "Помилка відправки форми");
+          // Показываем сообщение об ошибке
+          this.showModal(result.message || "Помилка відправки форми");
           this.isSubmitting = false;
+          this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
         }
       } catch (error) {
         console.error("Помилка запиту:", error);
-        alert("Не вдалося відправити дані. Спробуйте знову.");
+        this.showModal("Не вдалося відправити дані. Спробуйте знову.");
         this.isSubmitting = false;
+        this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
       }
     } catch (error) {
       console.error('Помилка відправки:', error);
-      alert('Сталася помилка при відправці форми. Будь ласка, спробуйте знову.');
+      this.showModal('Сталася помилка при відправці форми. Будь ласка, спробуйте знову.');
+      this.form.querySelector('button[type="submit"]').textContent = 'Реєстрація';
     } finally {
       this.isSubmitting = false;
+    }
+  }
+
+  // Добавляем метод для отображения модального окна
+  showModal(message, callback = null) {
+    this.modalMessage.text(message);
+    this.modal.modal('show');
+    
+    if (callback) {
+      this.modal.on('hidden.bs.modal', () => {
+        callback();
+        this.modal.off('hidden.bs.modal');
+      });
     }
   }
 }
