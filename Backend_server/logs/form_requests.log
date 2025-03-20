@@ -1,27 +1,37 @@
 {
-    "timestamp": "2025-03-19 17:01:12",
+    "timestamp": "2025-03-20 17:08:52",
     "ip": "2001:67c:2f5c:2::14a",
     "user_agent": "unknown",
     "request_data": {
-        "name": "Test1",
-        "surname": "Test1",
-        "email": "Te***@gmail.com",
+        "name": "test1",
+        "surname": "test1",
+        "email": "te***@gmail.com",
         "phone_code": "UA",
-        "phone": "+380******32",
+        "phone": "+380******12",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
         "ip": "194.4.68.207",
         "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
         "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
+        "url": "https:\/\/zafaley.com\/",
+        "geo": {
+            "country": "Невідомо",
+            "country_code": "XX",
+            "city": "Невідомо",
+            "region": "Невідомо",
+            "ip": "194.4.68.207"
+        }
     },
     "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
+        "success": true,
+        "redirectUrl": "\/thank-you.html",
+        "message": "Дані успішно відправлені"
     },
-    "success": false
+    "success": true
 }
 ---
 {
-    "timestamp": "2025-03-19 17:06:42",
+    "timestamp": "2025-03-20 17:10:44",
     "ip": "2001:67c:2f5c:2::14a",
     "user_agent": "unknown",
     "request_data": {
@@ -29,303 +39,14 @@
         "surname": "test2",
         "email": "te***@gmail.com",
         "phone_code": "UA",
-        "phone": "+380******43",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:07:29",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "Test3",
-        "surname": "Test3",
-        "email": "TE***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******73",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:08:30",
-    "ip": "194.4.68.207",
-    "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36",
-    "request_data": [],
-    "response_data": {
-        "success": false,
-        "message": "Невірний формат даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:08:46",
-    "ip": "194.4.68.207",
-    "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36",
-    "request_data": [],
-    "response_data": {
-        "success": false,
-        "message": "Невірний формат даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:12:01",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test4",
-        "surname": "test4",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******42",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:22:06",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test5",
-        "surname": "test5",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******44",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:25:13",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test6",
-        "surname": "test6",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******47",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": true,
-        "redirectUrl": "\/thank-you.html",
-        "message": "Дані успішно відправлені (тимчасовий режим)",
-        "note": "Тимчасовий режим без бази даних активовано"
-    },
-    "success": true
-}
----
-{
-    "timestamp": "2025-03-19 17:31:23",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test7",
-        "surname": "test7",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******54",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": true,
-        "redirectUrl": "\/thank-you.html",
-        "message": "Дані успішно відправлені (тимчасовий режим)",
-        "note": "Тимчасовий режим без бази даних активовано"
-    },
-    "success": true
-}
----
-{
-    "timestamp": "2025-03-19 17:35:30",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test228",
-        "surname": "test228",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******83",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": true,
-        "redirectUrl": "\/thank-you.html",
-        "message": "Дані успішно відправлені (тимчасовий режим)",
-        "note": "Тимчасовий режим без бази даних активовано"
-    },
-    "success": true
-}
----
-{
-    "timestamp": "2025-03-19 17:38:23",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test11",
-        "surname": "test11",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******63",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/"
-    },
-    "response_data": {
-        "success": false,
-        "message": "Помилка підключення до бази даних"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:43:41",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": [],
-    "response_data": {
-        "success": false,
-        "message": "СИМУЛЯЦИЯ ОШИБКИ: Ошибка на этапе 'validation'",
-        "debug_info": "Эта ошибка специально сгенерирована для отладки"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:44:53",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": [],
-    "response_data": {
-        "success": false,
-        "message": "СИМУЛЯЦИЯ ОШИБКИ: Ошибка на этапе 'validation'",
-        "debug_info": "Эта ошибка специально сгенерирована для отладки"
-    },
-    "success": false
-}
----
-{
-    "timestamp": "2025-03-19 17:46:05",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test14",
-        "surname": "test14",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******22",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/",
-        "geo": {
-            "country": "Невідомо",
-            "country_code": "XX",
-            "city": "Невідомо",
-            "region": "Невідомо",
-            "ip": "194.4.68.207"
-        }
-    },
-    "response_data": {
-        "success": true,
-        "redirectUrl": "\/thank-you.html",
-        "message": "Дані успішно відправлені"
-    },
-    "success": true
-}
----
-{
-    "timestamp": "2025-03-19 17:48:39",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test15",
-        "surname": "test15",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******45",
+        "phone": "+380******67",
+        "select_time": "Weekdays",
+        "select_price": "$2000 - $4000",
+        "comments": "test TrafficDevils",
         "ip": "194.4.68.207",
         "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
         "formId": "registrationForm2",
         "url": "https:\/\/zafaley.com\/",
-        "geo": {
-            "country": "Невідомо",
-            "country_code": "XX",
-            "city": "Невідомо",
-            "region": "Невідомо",
-            "ip": "194.4.68.207"
-        }
-    },
-    "response_data": {
-        "success": true,
-        "redirectUrl": "\/thank-you.html",
-        "message": "Дані успішно відправлені"
-    },
-    "success": true
-}
----
-{
-    "timestamp": "2025-03-19 18:24:19",
-    "ip": "2001:67c:2f5c:2::14a",
-    "user_agent": "unknown",
-    "request_data": {
-        "name": "test17",
-        "surname": "test17",
-        "email": "te***@gmail.com",
-        "phone_code": "UA",
-        "phone": "+380******36",
-        "ip": "194.4.68.207",
-        "title": "Aven - Real Estate Responsive HTML5 Landing Page Template",
-        "formId": "registrationForm1",
-        "url": "https:\/\/zafaley.com\/#home",
         "geo": {
             "country": "Невідомо",
             "country_code": "XX",

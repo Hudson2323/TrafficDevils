@@ -1,64 +1,13 @@
-[2025-03-19 17:01:12] Database initialization error: could not find driver
-[2025-03-19 17:06:42] Database initialization error: could not find driver
-[2025-03-19 17:07:29] Database initialization error: could not find driver
-[2025-03-19 17:12:01] Database initialization error: could not find driver
-[2025-03-19 17:22:06] Database initialization error: could not find driver
-[2025-03-19 17:25:13] Розширення PDO SQLite не знайдено у PHP. phpinfo(): <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<style type="text/css">
-body {background-color: #fff; color: #222; font-family: sans-serif;}
-pre {margin: 0; font-family: monospace;}
-a:link {color: #009; text-decoration: none; background-color: #fff;}
-a:hover {text-decoration: underline;}
-table {border-collapse: collapse; border: 0; width: 934px; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);}
-.center {text-align: center;}
-.center table {margin: 1em auto; text-align: left;}
-.center th {text-align: center !important;}
-td, th {border: 1px solid #666; font-size: 75%; vertical-align: baseline; padding: 4px 5px;}
-th {position: sticky; top: 0; background: inherit;}
-h1 {font-size: 150%;}
-h2 {font-size: 125%;}
-h2 a:link, h2 a:visited{color: inherit; background: inherit;}
-.p {text-align: left;}
-.e {background-color: #ccf; width: 300px; font-weight: bold;}
-.h {background-color: #99c; font-weight: bold;}
-.
-[2025-03-19 17:25:13] Тимчасовий запис даних у файл: /var/www/loweviu_com_usr/data/www/loweviu.com/database/form_data_1742405113_ca9008c6f1af8fab632e03d6b33b678c.json
-[2025-03-19 17:31:23] Директорія для бази даних /var/www/loweviu_com_usr/data/www/loweviu.com/database недоступна для запису
-[2025-03-19 17:31:23] Тимчасовий запис даних у файл: /var/www/loweviu_com_usr/data/www/loweviu.com/database/form_data_1742405483_1102b1deb2344aa6e6b2817cfec76791.json
-[2025-03-19 17:35:30] Директорія для бази даних /var/www/loweviu_com_usr/data/www/loweviu.com/database недоступна для запису
-[2025-03-19 17:35:30] Тимчасовий запис даних у файл: /var/www/loweviu_com_usr/data/www/loweviu.com/database/form_data_1742405730_92716ad091a515d85e4b910e2b28ed32.json
-[2025-03-19 17:38:23] Текущие права доступа:
-[2025-03-19 17:38:23] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 17:38:23] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 17:38:23] Не удалось создать тестовый файл
-[2025-03-19 17:38:23] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 17:38:23] Ошибка PDO: SQLSTATE[HY000] [14] unable to open database file
-[2025-03-19 17:38:23] Путь к БД: /var/www/loweviu_com_usr/data/www/loweviu.com/database/form_data.sqlite
-[2025-03-19 17:38:23] Права доступа к файлу БД: файл не существует
-[2025-03-19 17:38:23] Общая ошибка: SQLSTATE[HY000] [14] unable to open database file
-[2025-03-19 17:43:41] Текущие права доступа:
-[2025-03-19 17:43:41] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 17:43:41] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 17:43:41] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 17:43:41] PDO соединение успешно создано
-[2025-03-19 17:44:53] Текущие права доступа:
-[2025-03-19 17:44:53] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 17:44:53] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 17:44:53] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 17:44:53] PDO соединение успешно создано
-[2025-03-19 17:46:05] Текущие права доступа:
-[2025-03-19 17:46:05] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 17:46:05] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 17:46:05] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 17:46:05] PDO соединение успешно создано
-[2025-03-19 17:48:39] Текущие права доступа:
-[2025-03-19 17:48:39] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 17:48:39] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 17:48:39] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 17:48:39] PDO соединение успешно создано
-[2025-03-19 18:24:18] Текущие права доступа:
-[2025-03-19 18:24:18] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
-[2025-03-19 18:24:18] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
-[2025-03-19 18:24:18] PHP работает под пользователем: loweviu_com_usr
-[2025-03-19 18:24:18] PDO соединение успешно создано
+[2025-03-20 17:08:52] Текущие права доступа:
+[2025-03-20 17:08:52] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
+[2025-03-20 17:08:52] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
+[2025-03-20 17:08:52] PHP работает под пользователем: loweviu_com_usr
+[2025-03-20 17:08:52] Создаем файл базы данных...
+[2025-03-20 17:08:52] Файл базы данных создан успешно
+[2025-03-20 17:08:52] PDO соединение успешно создано
+[2025-03-20 17:08:52] Таблица users создана
+[2025-03-20 17:10:44] Текущие права доступа:
+[2025-03-20 17:10:44] Директория скрипта (/var/www/loweviu_com_usr/data/www/loweviu.com): 0755
+[2025-03-20 17:10:44] Директория БД (/var/www/loweviu_com_usr/data/www/loweviu.com/database): 0775
+[2025-03-20 17:10:44] PHP работает под пользователем: loweviu_com_usr
+[2025-03-20 17:10:44] PDO соединение успешно создано

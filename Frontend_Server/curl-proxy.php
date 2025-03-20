@@ -11,6 +11,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Получение данных из запроса
 $requestData = json_decode(file_get_contents('php://input'), true);
 
+// Логирование запроса для отладки
+$logDir = __DIR__ . '/logs';
+if (!file_exists($logDir)) {
+    mkdir($logDir, 0755, true);
+}
+file_put_contents(
+    $logDir . '/proxy_requests.log',
+    date('Y-m-d H:i:s') . ' - Request: ' . json_encode($requestData, JSON_UNESCAPED_UNICODE) . "\n",
+    FILE_APPEND
+);
+
 // Проверка наличия всех необходимых данных
 if (!isset($requestData['url']) || !isset($requestData['method'])) {
     http_response_code(400);
@@ -42,6 +53,13 @@ curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 
 // Выполнение запроса
 $response = curl_exec($ch);
+
+// Логирование ответа для отладки
+file_put_contents(
+    $logDir . '/proxy_responses.log',
+    date('Y-m-d H:i:s') . ' - Response: ' . $response . "\n",
+    FILE_APPEND
+);
 
 // Проверка на ошибки
 if (curl_errno($ch)) {

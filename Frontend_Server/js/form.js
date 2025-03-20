@@ -288,15 +288,35 @@ class RegistrationForm {
 
       try {
         const jsonData = Object.fromEntries(formData.entries());
+        
+        // Переконуємося, що phone_code передається
+        if (!jsonData.phone_code && this.selectedCountry) {
+          jsonData.phone_code = this.selectedCountry;
+        }
+        
+        // Переконуємося, що select_time передається
+        const selectTimeElement = this.form.querySelector('select[name="select_time"]');
+        if (selectTimeElement && (!jsonData.select_time || jsonData.select_time === 'Select Time')) {
+          jsonData.select_time = selectTimeElement.options[selectTimeElement.selectedIndex].text;
+        }
+        
+        // Переконуємося, що select_price передається
+        const selectPriceElement = this.form.querySelector('select[name="select_price"]');
+        if (selectPriceElement && !jsonData.select_price) {
+          jsonData.select_price = selectPriceElement.options[selectPriceElement.selectedIndex].text;
+        }
+        
         jsonData.ip = ip;
         jsonData.title = document.title;
         jsonData.formId = this.form.id;
         jsonData.url = window.location.href;
         
-        // Используем локальный прокси для отправки cURL запроса к удаленному серверу
+        // Використовуємо локальний проксі для відправки cURL запиту до віддаленого сервера
         const backendUrl = window.backendServerUrl || '';
         
         this.form.querySelector('button[type="submit"]').textContent = 'Надсилання...';
+        
+        console.log('Відправка даних:', jsonData); // Додаємо для відлагодження
         
         const response = await fetch('/curl-proxy.php', {
           method: "POST",
@@ -309,6 +329,7 @@ class RegistrationForm {
         });
 
         const result = await response.json();
+        console.log('Відповідь сервера:', result); // Додаємо для відлагодження
 
         if (result.success) {
           // Добавляем в кэш для предотвращения повторной отправки

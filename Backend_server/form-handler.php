@@ -56,18 +56,68 @@ function initDatabase() {
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             logError('PDO соединение успешно создано');
             
-            // Создаем таблицы
-            $pdo->exec('
-                CREATE TABLE IF NOT EXISTS users (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    name TEXT NOT NULL,
-                    surname TEXT NOT NULL,
-                    email TEXT NOT NULL UNIQUE,
-                    phone TEXT NOT NULL,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    ip_address TEXT
-                );
+            // Создаем таблицы и добавляем столбцы безопасным способом
+            // Сначала проверяем существование таблицы users
+            $tableExists = $pdo->query("SELECT name FROM sqlite_master WHERE type='table' AND name='users'")->fetchColumn();
+            
+            if (!$tableExists) {
+                // Если таблицы нет, создаем ее со всеми нужными столбцами
+                $pdo->exec('
+                    CREATE TABLE users (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT NOT NULL,
+                        surname TEXT NOT NULL,
+                        email TEXT NOT NULL UNIQUE,
+                        phone TEXT NOT NULL,
+                        phone_code TEXT,
+                        select_time TEXT,
+                        select_price TEXT,
+                        comments TEXT,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                        ip_address TEXT
+                    )
+                ');
+                logError('Таблица users создана');
+            } else {
+                // Если таблица существует, проверяем наличие столбцов и добавляем отсутствующие
+                $columns = [];
+                $result = $pdo->query("PRAGMA table_info(users)");
+                while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                    $columns[$row['name']] = true;
+                }
                 
+                // Добавляем отсутствующие столбцы
+                $alterStatements = [];
+                
+                if (!isset($columns['phone_code'])) {
+                    $alterStatements[] = "ALTER TABLE users ADD COLUMN phone_code TEXT";
+                }
+                
+                if (!isset($columns['select_time'])) {
+                    $alterStatements[] = "ALTER TABLE users ADD COLUMN select_time TEXT";
+                }
+                
+                if (!isset($columns['select_price'])) {
+                    $alterStatements[] = "ALTER TABLE users ADD COLUMN select_price TEXT";
+                }
+                
+                if (!isset($columns['comments'])) {
+                    $alterStatements[] = "ALTER TABLE users ADD COLUMN comments TEXT";
+                }
+                
+                // Выполняем ALTER TABLE для каждого отсутствующего столбца
+                foreach ($alterStatements as $statement) {
+                    try {
+                        $pdo->exec($statement);
+                        logError('Выполнено: ' . $statement);
+                    } catch (PDOException $e) {
+                        logError('Ошибка при выполнении: ' . $statement . ' - ' . $e->getMessage());
+                    }
+                }
+            }
+            
+            // Создаем другие таблицы, если они не существуют
+            $pdo->exec('
                 CREATE TABLE IF NOT EXISTS form_submissions (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     user_id INTEGER NOT NULL,
@@ -224,8 +274,8 @@ try {
     
     // Додавання нового користувача
     $stmt = $pdo->prepare('
-        INSERT INTO users (name, surname, email, phone, ip_address) 
-        VALUES (:name, :surname, :email, :phone, :ip)
+        INSERT INTO users (name, surname, email, phone, phone_code, select_time, select_price, comments, ip_address) 
+        VALUES (:name, :surname, :email, :phone, :phone_code, :select_time, :select_price, :comments, :ip)
     ');
     
     $stmt->execute([
@@ -233,6 +283,10 @@ try {
         ':surname' => $data['surname'],
         ':email' => $data['email'],
         ':phone' => $data['phone'],
+        ':phone_code' => $data['phone_code'] ?? '',
+        ':select_time' => $data['select_time'] ?? '',
+        ':select_price' => $data['select_price'] ?? '',
+        ':comments' => $data['comments'] ?? '',
         ':ip' => $ip
     ]);
     
