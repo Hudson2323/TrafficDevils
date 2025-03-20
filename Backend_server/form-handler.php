@@ -195,6 +195,23 @@ if (!$data) {
     exit;
 }
 
+// Перевірка CSRF токена
+$csrfToken = isset($_SERVER['HTTP_X_CSRF_TOKEN']) ? $_SERVER['HTTP_X_CSRF_TOKEN'] : '';
+$origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+
+// Якщо запит з того ж домену або з дозволеного домену, перевіряємо токен
+if (in_array($origin, $allowedOrigins)) {
+    if (empty($csrfToken) || !validateCSRFToken($csrfToken, $origin)) {
+        $response = ["success" => false, "message" => "Помилка перевірки безпеки"];
+        logRequest($data, $response, false);
+        echo json_encode($response);
+        exit;
+    }
+}
+
+// Санітизація вхідних даних для захисту від XSS
+$data = sanitizeInput($data);
+
 // Проверка дубликатов до валидации
 $email = $data['email'] ?? '';
 $phone = $data['phone'] ?? '';
@@ -456,5 +473,30 @@ function logError($errorMessage) {
     
     // Записуємо в файл
     file_put_contents($logFile, $logEntry, FILE_APPEND);
+}
+
+// Додаємо функцію для захисту від XSS
+function sanitizeInput($data) {
+    if (is_array($data)) {
+        foreach ($data as $key => $value) {
+            $data[$key] = sanitizeInput($value);
+        }
+    } else {
+        $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+    }
+    return $data;
+}
+
+// Додаємо перевірку CSRF токена
+function validateCSRFToken($token, $origin) {
+    // Проста перевірка на основі домену та секретного ключа
+    $secret = 'your-secret-key-change-this';
+    $expectedToken = hash('sha256', $origin . $secret);
+    
+    // Для відлагодження
+    error_log("Expected token: " . $expectedToken);
+    error_log("Received token: " . $token);
+    
+    return hash_equals($expectedToken, $token);
 }
 ?>

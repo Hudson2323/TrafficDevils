@@ -11,6 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Получение данных из запроса
 $requestData = json_decode(file_get_contents('php://input'), true);
 
+// Генерація CSRF токена
+$origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : (isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '');
+$secret = 'your-secret-key-change-this'; // Має бути таким же як на бекенді
+$csrfToken = hash('sha256', $origin . $secret);
+
 // Логирование запроса для отладки
 $logDir = __DIR__ . '/logs';
 if (!file_exists($logDir)) {
@@ -29,6 +34,12 @@ if (!isset($requestData['url']) || !isset($requestData['method'])) {
     exit;
 }
 
+// Додаємо CSRF токен до заголовків
+$headers = [
+    'Content-Type: application/json',
+    'X-CSRF-Token: ' . $csrfToken
+];
+
 // Подготовка cURL запроса
 $ch = curl_init($requestData['url']);
 
@@ -40,10 +51,7 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $requestData['method']);
 if (isset($requestData['data'])) {
     $jsonData = json_encode($requestData['data']);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        'Content-Type: application/json',
-        'Content-Length: ' . strlen($jsonData)
-    ]);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 }
 
 // Добавление безопасности (опционально)

