@@ -1,3 +1,74 @@
+<?php
+// Функція для визначення типу файлу за розширенням
+function getContentType($filename) {
+    $extension = pathinfo($filename, PATHINFO_EXTENSION);
+    switch (strtolower($extension)) {
+        case 'css':
+            return 'text/css';
+        case 'js':
+            return 'application/javascript';
+        case 'jpg':
+        case 'jpeg':
+            return 'image/jpeg';
+        case 'png':
+            return 'image/png';
+        case 'gif':
+            return 'image/gif';
+        case 'svg':
+            return 'image/svg+xml';
+        case 'ico':
+            return 'image/x-icon';
+        case 'woff':
+            return 'application/font-woff';
+        case 'woff2':
+            return 'application/font-woff2';
+        case 'ttf':
+            return 'application/x-font-ttf';
+        case 'eot':
+            return 'application/vnd.ms-fontobject';
+        default:
+            return 'text/html';
+    }
+}
+
+// Встановлення заголовків кешування для статичних файлів
+$requestUri = $_SERVER['REQUEST_URI'];
+$staticExtensions = ['css', 'js', 'jpg', 'jpeg', 'png', 'gif', 'svg', 'ico', 'woff', 'woff2', 'ttf', 'eot'];
+$fileExtension = pathinfo($requestUri, PATHINFO_EXTENSION);
+
+if (in_array(strtolower($fileExtension), $staticExtensions)) {
+    $maxAge = 31536000; // 1 рік в секундах
+    header("Cache-Control: public, max-age=$maxAge, immutable");
+    header("Pragma: public");
+    header("Expires: " . gmdate("D, d M Y H:i:s", time() + $maxAge) . " GMT");
+    
+    // Встановлення правильного Content-Type
+    header("Content-Type: " . getContentType($requestUri));
+    
+    // Відключення ETag
+    header_remove("ETag");
+    
+    // Якщо файл існує, віддаємо його
+    $filePath = __DIR__ . parse_url($requestUri, PHP_URL_PATH);
+    if (file_exists($filePath)) {
+        readfile($filePath);
+        exit;
+    }
+}
+
+// Для HTML сторінок відключаємо кешування
+if (empty($fileExtension) || strtolower($fileExtension) === 'php' || strtolower($fileExtension) === 'html') {
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+}
+
+// Включення стиснення gzip
+if (extension_loaded('zlib') && !ini_get('zlib.output_compression')) {
+    ini_set('zlib.output_compression', 'On');
+    ini_set('zlib.output_compression_level', '7');
+}
+?>
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 
@@ -542,7 +613,7 @@
                   </div>
                   <ul class="footer-links">
                      <li><a href="/cdn-cgi/l/email-protection#6546"><span class="__cf_email__"
-                              data-cfemail="137a7d757c536a7c6661607a67763d707c7e">[email�protected]</span></a></li>
+                              data-cfemail="137a7d757c536a7c6661607a67763d707c7e">[emailprotected]</span></a></li>
                      <li><a href="#">www.yoursite.com</a></li>
                      <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
                      <li>+61 3 8376 6284</li>
@@ -605,7 +676,7 @@
                   <a href="#">Faq</a>
                   <a href="#">Contact</a>
                </p>
-               <p class="footer-company-name">All Rights Reserved. <a href="https://html.design/">html.design</a> � 2021
+               <p class="footer-company-name">All Rights Reserved. <a href="https://html.design/">html.design</a> 2021
                </p>
             </div>
             <div class="footer-right">
