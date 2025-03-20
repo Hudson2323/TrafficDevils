@@ -176,8 +176,7 @@ try {
     
     $pdo->commit();
     
-    $response = [
-        "success" => true,
+     "success" => true,
         "redirectUrl" => "/thank-you.html",
         "message" => "Дані успішно відправлені"
     ];
@@ -189,7 +188,8 @@ try {
     $response = [
         "success" => false,
         "message" => "Помилка збереження даних"
-    ];
+    ];$response = [
+       
 }
 
 // Логування запиту

@@ -100,7 +100,7 @@
                   </div>
                </div>
                <div class="col-md-6 wow slideInRight hidden-xs hidden-sm">
-                  <form id="registrationForm1" class="registration-form" method="POST" action="/submit-form">
+                  <form id="registrationForm1" class="registration-form" method="POST" action="form-handler.php">
                         
                      <input type="text" name="name" placeholder="First Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
                      <input type="text" name="surname" placeholder="Last Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
@@ -425,7 +425,7 @@
             <!-- end title -->
             <div class="row">
                <div class="col-md-8 col-md-offset-2">
-                  <form id="registrationForm2" class="registration-form" method="POST" action="/submit-form">
+                  <form id="registrationForm2" class="registration-form" method="POST" action="form-handler.php">
                         
                      <input type="text" name="name" placeholder="First Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
                      <input type="text" name="surname" placeholder="Last Name" required style="color: rgb(0, 0, 0) !important; background: rgb(255, 255, 255) !important;">
